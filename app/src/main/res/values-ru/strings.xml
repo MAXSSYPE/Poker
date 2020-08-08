@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Poker</string>
+    <string name="num_of_cards">Карт в раздаче: </string>
+    <string name="bribes">Количество заказанных взяток</string>
+    <string name="real_bribes">Kоличество взятых взяток</string>
+    <string name="gamers">Количество игроков</string>
+    <string name="max_bribes">Максимальное количество взяток</string>
+    <string name="left_bribes">Количество оставшихся взяток: </string>
+    <string name="more_bribes">Взяток больше чем есть</string>
+    <string name="start">Начать</string>
+    <string name="start_new_game">Начать новую игру?</string>
+    <string name="game_over">Игра окончена</string>
+    <string name="menu">Меню</string>
+    <string name="score">Счёт</string>
+    <string name="full_score">Полный счет</string>
+    <string name="add">Добавить к счету</string>
+    <string name="new_game">Новая игра</string>
+    <string name="continue_game">Продолжить</string>
+    <string name="settings">Настройки</string>
+    <string name="sure">Вы уверенны?</string>
+    <string name="go_to_menu">Выйти в меню?</string>
+    <string name="progress_save">Весь прогресс будет сохранен</string>
+    <string name="exit">Выйти из приложения?</string>
+    <string name="yes">Да</string>
+    <string name="no">Нет</string>
+    <string name="ok">ОК</string>
+    <string name="number">№</string>
+    <string name="not_equal">Неправильно посчитаны взятые взятки</string>
+    <string name="gamer1">Игрок 1</string>
+    <string name="gamer2">Игрок 2</string>
+    <string name="gamer3">Игрок 3</string>
+    <string name="gamer4">Игрок 4</string>
+    <string name="gamer5">Игрок 5</string>
+    <string name="gamer6">Игрок 6</string>
+</resources>

@@ -175,8 +175,6 @@ class Activity5 : AppCompatActivity() {
 
     fun onAddClick(view: View) {
         if (position < numberOfCardsInt.size) {
-            if (position == numberOfCardsInt.size - 1)
-                gameOverDialog()
             if (realBribes.progress + realBribes2.progress + realBribes3.progress + realBribes4.progress + realBribes5.progress == numberOfCardsInt[position])
                 IonAlert(this, IonAlert.SUCCESS_TYPE)
                     .setTitleText(getString(R.string.sure))
@@ -187,6 +185,8 @@ class Activity5 : AppCompatActivity() {
                     .setConfirmClickListener { sDialog: IonAlert ->
                         addAll()
                         sDialog.cancel()
+                        if (position == numberOfCardsInt.size)
+                            gameOverDialog()
                     }
                     .show()
             else
@@ -259,14 +259,15 @@ class Activity5 : AppCompatActivity() {
 
         position++
         var supp = getString(R.string.game_over)
+        var supp2 = getString(R.string.game_over)
         if (position < numberOfCardsInt.size) {
             supp = getString(R.string.num_of_cards) + numberOfCardsInt[position]
+            supp2 = getString(R.string.left_bribes) + numberOfCardsInt[position]
             updatePickersMax(numberOfCardsInt[position])
             changeMainPlayer()
         }
         numberOfCards.text = supp
-        supp = getString(R.string.left_bribes) + numberOfCardsInt[position]
-        numberOfBribes.text = supp
+        numberOfBribes.text = supp2
         zeroAllPickers()
     }
 
@@ -451,6 +452,8 @@ class Activity5 : AppCompatActivity() {
                 updatePickersMax(numberOfCardsInt[position])
                 editor.apply()
                 sDialog.cancel()
+                numberOfCardsIntInit()
+                save()
             }
             .show()
     }
